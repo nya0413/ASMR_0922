@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		#img{width:100%;}
+	</style>
+</head>
+<body>
+	<img src="1.jpg" id="img1">
+	<audio src="1.wav" id="snd1"></audio>
+ 
+	<img src="2.jpg" id="img2">
+	<audio src="2.wav" id="snd2"></audio>
+ 
+	<img src="3.jpg" id="img3">
+	<audio src="3.mp3" id="snd3"></audio>
+  
+	<img src="4.jpg" id="img4">
+	<audio src="4.wav" id="snd4"></audio>
+ 
+	<img src="5.jpg" id="img5">
+	<audio src="5.mp3" id="snd5"></audio>
+ 
+	<script>
+	let keyboard = "no";
+	img1.onclick = function(){
+		if (keyboard == "no"){
+			snd1.play();
+			img1.style.opacity = "30%";
+			keyboard = "yes";
+		}else if (keyboard == "yes"){
+			snd1.pause();
+			snd1.currentTime = 0;
+			img1.style.opacity = "1";
+			keyboard = "no";
+		}
+	};
+ 
+	let paper = "no";
+	img2.onclick = function(){
+		if (paper == "no"){
+			snd2.play();
+			img2.style.opacity = "30%";
+			paper = "yes";
+		}else if (paper == "yes"){
+			snd2.pause();
+			snd2.currentTime = 0;
+			img2.style.opacity = "1";
+			paper = "no";
+		}
+	};
+ 
+	let camera = "no";
+	img3.onclick = function(){
+		if (camera == "no"){
+			snd3.play();
+			img3.style.opacity = "30%";
+			camera = "yes";
+		}else if (camera == "yes"){
+			snd3.pause();
+			snd3.currentTime = 0;
+			img3.style.opacity = "1";
+			camera = "no";
+		}
+	};
+ 
+	let coffee = "no";
+	img4.onclick = function(){
+		if (coffee == "no"){
+			snd4.play();
+			img4.style.opacity = "30%";
+			coffee = "yes";
+		}else if (coffee == "yes"){
+			snd4.pause();
+			snd4.currentTime = 0;
+			img4.style.opacity = "1";
+			coffee = "no";
+		}
+	};
+ 
+	let turntable = "no";
+	img5.onclick = function(){
+		if (turntable == "no"){
+			snd5.play();
+			img5.style.opacity = "30%";
+			turntable = "yes";
+		}else if (turntable == "yes"){
+			snd5.pause();
+			snd5.currentTime = 0;
+			img5.style.opacity = "1";
+			turntable = "no";
+		}
+	};
+	</script>
+ 
+</body>
+</html>
+
+</body>
+</html>
